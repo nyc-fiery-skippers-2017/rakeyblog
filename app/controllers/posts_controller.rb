@@ -40,6 +40,7 @@ class PostsController < ApplicationController
 
   # Show action renders the individual post after retriving the post id
   def show
+    @post = Post.find(params[:id])
   end
 
   # Destroy action removes the post permanenetly from the database
